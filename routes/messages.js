@@ -41,7 +41,7 @@ router.put(
         //     imagePath = url + "/images/" + req.file.filename;
         // }
         const message = new Message({
-            _id: req.body.id,
+            _id: req.params.id,
             title: req.body.title,
             content: req.body.content,
             isPalindrome: palindromeHelper(req.body.content)
