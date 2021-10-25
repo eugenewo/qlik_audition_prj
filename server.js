@@ -1,8 +1,7 @@
 const app = require("./app");
 const debug = require("debug")("node-angular");
 const http = require("http");
-swaggerJsdoc = require("swagger-jsdoc"),
-    swaggerUi = require("swagger-ui-express")
+
 
 const normalizePort = val => {
     var port = parseInt(val, 10);
