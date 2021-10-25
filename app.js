@@ -1,18 +1,18 @@
 const path = require("path");
+require('dotenv/config')
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
 const messagesRoutes = require("./routes/messages");
 const userRoutes = require("./routes/user");
-
 const app = express();
-
+const mongo_db = process.env.remote_mongo_db
 
 
 mongoose
     .connect(
-        'mongodb://127.0.0.1:27017/messages'
+        mongo_db
     )
     .then(() => {
         console.log("Connected to database!");
