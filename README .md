@@ -15,7 +15,7 @@ To run the project use this command  -> npm run start:server
 This project is connected to the mongodb via https://cloud.mongodb.com/.
 To access the actual db use MongoDBCompass, and use this connection string 
 'mongodb+srv://qlik_user:1qaz2wsx@cluster0.rnavp.mongodb.net/test'
-(which can also be found in .env file)
+(which can also be found in .env file) or use any local mongodb app, like Robo 3T (which is totally free)
 
 API can be tested via shared POSTMAN link : https://www.getpostman.com/collections/d861b7797eaff78ed3a3
 
